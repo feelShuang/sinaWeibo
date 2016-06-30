@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		65CD2B441D25172F00BE0816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD2B431D25172F00BE0816 /* AppDelegate.swift */; };
-		65CD2B461D25173000BE0816 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD2B451D25173000BE0816 /* ViewController.swift */; };
 		65CD2B491D25173000BE0816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CD2B471D25173000BE0816 /* Main.storyboard */; };
 		65CD2B4B1D25173000BE0816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65CD2B4A1D25173000BE0816 /* Assets.xcassets */; };
 		65CD2B4E1D25173000BE0816 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CD2B4C1D25173000BE0816 /* LaunchScreen.storyboard */; };
 		65CD2B591D25173000BE0816 /* SinaWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD2B581D25173000BE0816 /* SinaWeiboTests.swift */; };
 		65CD2B641D25173000BE0816 /* SinaWeiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD2B631D25173000BE0816 /* SinaWeiboUITests.swift */; };
+		65CD2B951D25184200BE0816 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 65CD2B811D25184200BE0816 /* MainVCSettings.json */; };
+		65CD2B961D25184200BE0816 /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD2B821D25184200BE0816 /* NullViewController.swift */; };
+		65CD2B9A1D251E7900BE0816 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD2B991D251E7900BE0816 /* MainTabBarController.swift */; };
+		65CD2B9C1D251E8F00BE0816 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD2B9B1D251E8F00BE0816 /* HomeTableViewController.swift */; };
+		65CD2B9E1D251E9C00BE0816 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD2B9D1D251E9C00BE0816 /* DiscoverTableViewController.swift */; };
+		65CD2BA01D251EA900BE0816 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD2B9F1D251EA900BE0816 /* MessageTableViewController.swift */; };
+		65CD2BA21D251EB700BE0816 /* MineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD2BA11D251EB700BE0816 /* MineTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,6 @@
 /* Begin PBXFileReference section */
 		65CD2B401D25172F00BE0816 /* SinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CD2B431D25172F00BE0816 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65CD2B451D25173000BE0816 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		65CD2B481D25173000BE0816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65CD2B4A1D25173000BE0816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65CD2B4D1D25173000BE0816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,13 @@
 		65CD2B5F1D25173000BE0816 /* SinaWeiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinaWeiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CD2B631D25173000BE0816 /* SinaWeiboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinaWeiboUITests.swift; sourceTree = "<group>"; };
 		65CD2B651D25173000BE0816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65CD2B811D25184200BE0816 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		65CD2B821D25184200BE0816 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
+		65CD2B991D251E7900BE0816 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		65CD2B9B1D251E8F00BE0816 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		65CD2B9D1D251E9C00BE0816 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		65CD2B9F1D251EA900BE0816 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		65CD2BA11D251EB700BE0816 /* MineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +109,8 @@
 		65CD2B421D25172F00BE0816 /* SinaWeibo */ = {
 			isa = PBXGroup;
 			children = (
+				65CD2B711D25184200BE0816 /* Classes */,
 				65CD2B431D25172F00BE0816 /* AppDelegate.swift */,
-				65CD2B451D25173000BE0816 /* ViewController.swift */,
 				65CD2B471D25173000BE0816 /* Main.storyboard */,
 				65CD2B4A1D25173000BE0816 /* Assets.xcassets */,
 				65CD2B4C1D25173000BE0816 /* LaunchScreen.storyboard */,
@@ -123,6 +135,220 @@
 				65CD2B651D25173000BE0816 /* Info.plist */,
 			);
 			path = SinaWeiboUITests;
+			sourceTree = "<group>";
+		};
+		65CD2B711D25184200BE0816 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				65CD2B771D25184200BE0816 /* Home */,
+				65CD2B721D25184200BE0816 /* Discover */,
+				65CD2B841D25184200BE0816 /* Message */,
+				65CD2B891D25184200BE0816 /* Mine */,
+				65CD2B7C1D25184200BE0816 /* Main */,
+				65CD2B8E1D25184200BE0816 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		65CD2B721D25184200BE0816 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				65CD2B731D25184200BE0816 /* Controller */,
+				65CD2B751D25184200BE0816 /* Model */,
+				65CD2B761D25184200BE0816 /* View */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		65CD2B731D25184200BE0816 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65CD2B9D1D251E9C00BE0816 /* DiscoverTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		65CD2B751D25184200BE0816 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65CD2B761D25184200BE0816 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		65CD2B771D25184200BE0816 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				65CD2B781D25184200BE0816 /* Controller */,
+				65CD2B7A1D25184200BE0816 /* Model */,
+				65CD2B7B1D25184200BE0816 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		65CD2B781D25184200BE0816 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65CD2B9B1D251E8F00BE0816 /* HomeTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		65CD2B7A1D25184200BE0816 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65CD2B7B1D25184200BE0816 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		65CD2B7C1D25184200BE0816 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				65CD2B7D1D25184200BE0816 /* Controller */,
+				65CD2B7F1D25184200BE0816 /* Model */,
+				65CD2B801D25184200BE0816 /* Resource */,
+				65CD2B831D25184200BE0816 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		65CD2B7D1D25184200BE0816 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65CD2B991D251E7900BE0816 /* MainTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		65CD2B7F1D25184200BE0816 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65CD2B801D25184200BE0816 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				65CD2B811D25184200BE0816 /* MainVCSettings.json */,
+				65CD2B821D25184200BE0816 /* NullViewController.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		65CD2B831D25184200BE0816 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		65CD2B841D25184200BE0816 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				65CD2B851D25184200BE0816 /* Controller */,
+				65CD2B871D25184200BE0816 /* Model */,
+				65CD2B881D25184200BE0816 /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		65CD2B851D25184200BE0816 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65CD2B9F1D251EA900BE0816 /* MessageTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		65CD2B871D25184200BE0816 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65CD2B881D25184200BE0816 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		65CD2B891D25184200BE0816 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				65CD2B8A1D25184200BE0816 /* Controller */,
+				65CD2B8C1D25184200BE0816 /* Model */,
+				65CD2B8D1D25184200BE0816 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		65CD2B8A1D25184200BE0816 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65CD2BA11D251EB700BE0816 /* MineTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		65CD2B8C1D25184200BE0816 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65CD2B8D1D25184200BE0816 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		65CD2B8E1D25184200BE0816 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				65CD2B8F1D25184200BE0816 /* Controller */,
+				65CD2B901D25184200BE0816 /* Model */,
+				65CD2B911D25184200BE0816 /* View */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		65CD2B8F1D25184200BE0816 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		65CD2B901D25184200BE0816 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65CD2B911D25184200BE0816 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +460,7 @@
 			files = (
 				65CD2B4E1D25173000BE0816 /* LaunchScreen.storyboard in Resources */,
 				65CD2B4B1D25173000BE0816 /* Assets.xcassets in Resources */,
+				65CD2B951D25184200BE0816 /* MainVCSettings.json in Resources */,
 				65CD2B491D25173000BE0816 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +486,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65CD2B461D25173000BE0816 /* ViewController.swift in Sources */,
+				65CD2B9C1D251E8F00BE0816 /* HomeTableViewController.swift in Sources */,
+				65CD2B961D25184200BE0816 /* NullViewController.swift in Sources */,
 				65CD2B441D25172F00BE0816 /* AppDelegate.swift in Sources */,
+				65CD2BA21D251EB700BE0816 /* MineTableViewController.swift in Sources */,
+				65CD2B9E1D251E9C00BE0816 /* DiscoverTableViewController.swift in Sources */,
+				65CD2BA01D251EA900BE0816 /* MessageTableViewController.swift in Sources */,
+				65CD2B9A1D251E7900BE0816 /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,8 +636,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = SinaWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = LiuShuang.SinaWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -415,6 +649,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = SinaWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LiuShuang.SinaWeibo;
