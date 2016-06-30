@@ -13,23 +13,34 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // iOS7以后只需要设置tintColor,那么图片和文字都会按照tintColor渲染
+        tabBar.tintColor = UIColor.orangeColor()
+        
+        // 添加所有的子控制器
+        addChildViewControllers();
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: - 添加所有的子控制器
+    func addChildViewControllers(){
+    
+        // 首页
+        addChildViewController(HomeTableViewController(), title: "首页", imageName: "tabbar_home")
+        // 首页
+        addChildViewController(HomeTableViewController(), title: "消息", imageName: "tabbar_message_center")
+        // 首页
+        addChildViewController(HomeTableViewController(), title: "发现", imageName: "tabbar_discover")
+        // 首页
+        addChildViewController(HomeTableViewController(), title: "我", imageName: "tabbar_profile")
     }
-    */
-
+    
+    // MARK: - 添加一个子控制器
+    func addChildViewController(childController: UIViewController, title: String, imageName: String) {
+        
+        // 设置子控制器的属性
+        childController.tabBarItem.title = title
+        childController.tabBarItem.image = UIImage(named: imageName)
+        childController.tabBarItem.selectedImage = UIImage(named: imageName + "_hightlighted")
+        
+        addChildViewController(childController)
+    }
 }
