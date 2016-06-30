@@ -24,17 +24,36 @@ class MainTabBarController: UITabBarController {
     func addChildViewControllers(){
     
         // 首页
-        addChildViewController(HomeTableViewController(), title: "首页", imageName: "tabbar_home")
+        addChildViewController("HomeTableViewController", title: "首页", imageName: "tabbar_home")
         // 首页
-        addChildViewController(HomeTableViewController(), title: "消息", imageName: "tabbar_message_center")
+        addChildViewController("HomeTableViewController", title: "消息", imageName: "tabbar_message_center")
         // 首页
-        addChildViewController(HomeTableViewController(), title: "发现", imageName: "tabbar_discover")
+            addChildViewController("HomeTableViewController", title: "发现", imageName: "tabbar_discover")
         // 首页
-        addChildViewController(HomeTableViewController(), title: "我", imageName: "tabbar_profile")
+        addChildViewController("HomeTableViewController", title: "我", imageName: "tabbar_profile")
     }
     
     // MARK: - 添加一个子控制器
-    func addChildViewController(childController: UIViewController, title: String, imageName: String) {
+    func addChildViewController(childControllerName: String, title: String, imageName: String) {
+        /*
+        guard 条件判断 else {
+            只有条件为假才会执行{}
+            return;
+        }
+         guard可以有效解决可选绑定容易形成{}的嵌套
+         */
+        
+        guard let name = NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as? String else {
+            LSLog("获取命名空间失败")
+            return
+        }
+        let cls: AnyClass? = NSClassFromString(name + "." + childControllerName)
+        
+        guard let typeCls = cls as? UITableViewController.Type else {
+            LSLog("cls不能当做UITableViewController")
+            return
+        }
+        let childController = typeCls.init()
         
         // 设置子控制器的属性
         childController.tabBarItem.title = title
