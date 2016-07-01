@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6543B1391D26415600E422A9 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6543B1381D26415600E422A9 /* Home.storyboard */; };
+		6543B13B1D26416600E422A9 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6543B13A1D26416600E422A9 /* Message.storyboard */; };
+		6543B13D1D26417100E422A9 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6543B13C1D26417100E422A9 /* Discover.storyboard */; };
+		6543B1411D26419500E422A9 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6543B1401D26419500E422A9 /* Mine.storyboard */; };
+		655E9FF81D260D22008385E6 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E9FF71D260D22008385E6 /* UIButton+Extension.swift */; };
 		65CD2B441D25172F00BE0816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD2B431D25172F00BE0816 /* AppDelegate.swift */; };
 		65CD2B491D25173000BE0816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CD2B471D25173000BE0816 /* Main.storyboard */; };
 		65CD2B4B1D25173000BE0816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65CD2B4A1D25173000BE0816 /* Assets.xcassets */; };
@@ -40,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6543B1381D26415600E422A9 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		6543B13A1D26416600E422A9 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		6543B13C1D26417100E422A9 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		6543B1401D26419500E422A9 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
+		655E9FF71D260D22008385E6 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		65CD2B401D25172F00BE0816 /* SinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CD2B431D25172F00BE0816 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65CD2B481D25173000BE0816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		655E9FF61D260CE4008385E6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				655E9FF71D260D22008385E6 /* UIButton+Extension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		65CD2B371D25172F00BE0816 = {
 			isa = PBXGroup;
 			children = (
@@ -141,8 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				65CD2B771D25184200BE0816 /* Home */,
-				65CD2B721D25184200BE0816 /* Discover */,
 				65CD2B841D25184200BE0816 /* Message */,
+				65CD2B721D25184200BE0816 /* Discover */,
 				65CD2B891D25184200BE0816 /* Mine */,
 				65CD2B7C1D25184200BE0816 /* Main */,
 				65CD2B8E1D25184200BE0816 /* Tools */,
@@ -153,6 +171,7 @@
 		65CD2B721D25184200BE0816 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				6543B13C1D26417100E422A9 /* Discover.storyboard */,
 				65CD2B731D25184200BE0816 /* Controller */,
 				65CD2B751D25184200BE0816 /* Model */,
 				65CD2B761D25184200BE0816 /* View */,
@@ -185,6 +204,7 @@
 		65CD2B771D25184200BE0816 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				6543B1381D26415600E422A9 /* Home.storyboard */,
 				65CD2B781D25184200BE0816 /* Controller */,
 				65CD2B7A1D25184200BE0816 /* Model */,
 				65CD2B7B1D25184200BE0816 /* View */,
@@ -259,6 +279,7 @@
 		65CD2B841D25184200BE0816 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				6543B13A1D26416600E422A9 /* Message.storyboard */,
 				65CD2B851D25184200BE0816 /* Controller */,
 				65CD2B871D25184200BE0816 /* Model */,
 				65CD2B881D25184200BE0816 /* View */,
@@ -291,6 +312,7 @@
 		65CD2B891D25184200BE0816 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				6543B1401D26419500E422A9 /* Mine.storyboard */,
 				65CD2B8A1D25184200BE0816 /* Controller */,
 				65CD2B8C1D25184200BE0816 /* Model */,
 				65CD2B8D1D25184200BE0816 /* View */,
@@ -323,6 +345,7 @@
 		65CD2B8E1D25184200BE0816 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				655E9FF61D260CE4008385E6 /* Category */,
 				65CD2B8F1D25184200BE0816 /* Controller */,
 				65CD2B901D25184200BE0816 /* Model */,
 				65CD2B911D25184200BE0816 /* View */,
@@ -459,9 +482,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				65CD2B4E1D25173000BE0816 /* LaunchScreen.storyboard in Resources */,
+				6543B1391D26415600E422A9 /* Home.storyboard in Resources */,
 				65CD2B4B1D25173000BE0816 /* Assets.xcassets in Resources */,
 				65CD2B951D25184200BE0816 /* MainVCSettings.json in Resources */,
+				6543B13B1D26416600E422A9 /* Message.storyboard in Resources */,
+				6543B13D1D26417100E422A9 /* Discover.storyboard in Resources */,
 				65CD2B491D25173000BE0816 /* Main.storyboard in Resources */,
+				6543B1411D26419500E422A9 /* Mine.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +518,7 @@
 				65CD2B441D25172F00BE0816 /* AppDelegate.swift in Sources */,
 				65CD2BA21D251EB700BE0816 /* MineTableViewController.swift in Sources */,
 				65CD2B9E1D251E9C00BE0816 /* DiscoverTableViewController.swift in Sources */,
+				655E9FF81D260D22008385E6 /* UIButton+Extension.swift in Sources */,
 				65CD2BA01D251EA900BE0816 /* MessageTableViewController.swift in Sources */,
 				65CD2B9A1D251E7900BE0816 /* MainTabBarController.swift in Sources */,
 			);
@@ -722,6 +750,7 @@
 				65CD2B6A1D25173000BE0816 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65CD2B6B1D25173000BE0816 /* Build configuration list for PBXNativeTarget "SinaWeiboTests" */ = {
 			isa = XCConfigurationList;
@@ -730,6 +759,7 @@
 				65CD2B6D1D25173000BE0816 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65CD2B6E1D25173000BE0816 /* Build configuration list for PBXNativeTarget "SinaWeiboUITests" */ = {
 			isa = XCConfigurationList;
@@ -738,6 +768,7 @@
 				65CD2B701D25173000BE0816 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
