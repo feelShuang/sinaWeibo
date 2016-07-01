@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.makeKeyAndVisible()
         
+        // 一般情况下
+        UINavigationBar.appearance().tintColor = UIColor.orangeColor()
         return true
     }
 

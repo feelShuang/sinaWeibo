@@ -8,12 +8,16 @@
 
 import UIKit
 
-class DiscoverTableViewController: UITableViewController {
+class DiscoverTableViewController: BaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        // 1.判断用户是否登录
+        if !isLogin {
+            visitorView?.setupVisitorInfo("visitordiscover_image_profile", title: "关注一些人，看看有什么惊喜")
+            return
+        }
     }
 }
 

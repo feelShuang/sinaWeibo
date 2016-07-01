@@ -8,12 +8,16 @@
 
 import UIKit
 
-class MineTableViewController: UITableViewController {
+class MineTableViewController: BaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        // 1.判断用户是否登录
+        if !isLogin {
+            visitorView?.setupVisitorInfo("visitordiscover_image_profile", title: "登陆后，你的微博、相册、个人资料会显示在这里，展示给他人")
+            return
+        }
     }
 }
 
