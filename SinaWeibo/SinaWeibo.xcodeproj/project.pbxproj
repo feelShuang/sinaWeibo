@@ -15,6 +15,7 @@
 		6543B1451D2644F300E422A9 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543B1441D2644F300E422A9 /* VisitorView.swift */; };
 		6543B1471D26450500E422A9 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6543B1461D26450500E422A9 /* VisitorView.xib */; };
 		6543B1491D26737C00E422A9 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543B1481D26737C00E422A9 /* UIBarButtonItem+Extension.swift */; };
+		6543B14B1D26793200E422A9 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543B14A1D26793200E422A9 /* TitleButton.swift */; };
 		655E9FF81D260D22008385E6 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E9FF71D260D22008385E6 /* UIButton+Extension.swift */; };
 		65CD2B441D25172F00BE0816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD2B431D25172F00BE0816 /* AppDelegate.swift */; };
 		65CD2B491D25173000BE0816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CD2B471D25173000BE0816 /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		6543B1441D2644F300E422A9 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		6543B1461D26450500E422A9 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
 		6543B1481D26737C00E422A9 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		6543B14A1D26793200E422A9 /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
 		655E9FF71D260D22008385E6 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		65CD2B401D25172F00BE0816 /* SinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CD2B431D25172F00BE0816 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -368,6 +370,7 @@
 		65CD2B8F1D25184200BE0816 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6543B14A1D26793200E422A9 /* TitleButton.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 				655E9FF81D260D22008385E6 /* UIButton+Extension.swift in Sources */,
 				6543B1451D2644F300E422A9 /* VisitorView.swift in Sources */,
 				65CD2BA01D251EA900BE0816 /* MessageTableViewController.swift in Sources */,
+				6543B14B1D26793200E422A9 /* TitleButton.swift in Sources */,
 				65CD2B9A1D251E7900BE0816 /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

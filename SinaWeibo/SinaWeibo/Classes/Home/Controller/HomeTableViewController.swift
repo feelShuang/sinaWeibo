@@ -19,10 +19,21 @@ class HomeTableViewController: BaseTableViewController {
             return
         }
         
-        // 2.添加导航条按钮
-        navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "navigationbar_friendattention", target: self, action: #selector(leftBarButtonItemClick))
+        // 2.初始化导航条
+        setupNav()
+    }
+    
+    private func setupNav() {
         
+        // 2.1 添加leftBarButton
+        navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "navigationbar_friendattention", target: self, action: #selector(leftBarButtonItemClick))
+        // 2.2 添加rightBarButton
         navigationItem.rightBarButtonItem = UIBarButtonItem(imageName: "navigationbar_pop", target: self, action: #selector(rightBarButtonItemClick))
+        // 2.3 添加title
+        let titleBtn = TitleButton()
+        titleBtn.setTitle("feelShuang", forState: UIControlState.Normal)
+        titleBtn.addTarget(self, action: #selector(titleViewClick), forControlEvents: UIControlEvents.TouchUpInside)
+        navigationItem.titleView = titleBtn
     }
     
     @objc func leftBarButtonItemClick() {
@@ -31,6 +42,10 @@ class HomeTableViewController: BaseTableViewController {
     
     @objc func rightBarButtonItemClick() {
         LSLog("")
+    }
+    
+    @objc func titleViewClick(btn: UIButton) {
+        btn.selected = !btn.selected
     }
 }
 
