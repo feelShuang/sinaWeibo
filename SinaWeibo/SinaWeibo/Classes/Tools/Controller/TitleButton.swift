@@ -33,11 +33,17 @@ class TitleButton: UIButton {
         sizeToFit()
     }
     
+    override func setTitle(title: String?, forState state: UIControlState) {
+        super.setTitle((title ?? "") + "  " , forState: state)
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         
 //        titleEdgeInsets = UIEdgeInsets(top: 0, left: (imageView?.frame.size.width)!, bottom: 0, right: (imageView?.frame.size.width)!
 //        )
 //        imageEdgeInsets = UIEdgeInsets(top: 0, left: (titleLabel?.frame.size.width)!, bottom: 0, right: (titleLabel?.frame.size.width)!)
+        titleLabel?.frame.origin.x = 0
+        imageView?.frame.origin.x = titleLabel!.frame.width
     }
 }
