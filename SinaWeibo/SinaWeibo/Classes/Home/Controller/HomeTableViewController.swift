@@ -41,7 +41,11 @@ class HomeTableViewController: BaseTableViewController {
     }
     
     @objc func rightBarButtonItemClick() {
-        LSLog("")
+        // 1. 通过storyboard创建控制器
+        let qrSB = UIStoryboard(name: "QRcode", bundle: nil)
+        let qrVC = qrSB.instantiateInitialViewController()!
+        // 2. 推出控制器
+        presentViewController(qrVC, animated: true, completion: nil)
     }
     
     @objc func titleViewClick(btn: UIButton) {

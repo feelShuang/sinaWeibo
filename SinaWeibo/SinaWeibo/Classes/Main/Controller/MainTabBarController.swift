@@ -52,11 +52,11 @@ class MainTabBarController: UITabBarController {
         
         // 1.1 读取JSON数据
         guard let filePath = NSBundle.mainBundle().pathForResource("MainVCSettings", ofType: "json") else {
-            return;
+            return
         }
         // 1.2 将JSON数据转换为对象
         guard let data = NSData(contentsOfFile: filePath) else {
-            return;
+            return
         }
         // Swift和OC不太一样，OC中一般情况如果发生错误会给传入的指针赋值，而在Swift中使用的是异常处理机制
         // 以后单反看到thows的方法，那么就必须进行try处理，而只要看到try,就需要协商do{} catch{}
@@ -83,6 +83,7 @@ class MainTabBarController: UITabBarController {
     // MARK: - 添加一个子控制器
     private func addChildViewController(childControllerName: String?, title: String?, imageName: String?) {
         /*
+         guard 在函数内部使用
         guard 条件判断 else {
             只有条件为假才会执行{}
             return;

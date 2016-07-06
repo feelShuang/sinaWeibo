@@ -30,6 +30,8 @@
 		65CD2B9E1D251E9C00BE0816 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD2B9D1D251E9C00BE0816 /* DiscoverTableViewController.swift */; };
 		65CD2BA01D251EA900BE0816 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD2B9F1D251EA900BE0816 /* MessageTableViewController.swift */; };
 		65CD2BA21D251EB700BE0816 /* MineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD2BA11D251EB700BE0816 /* MineTableViewController.swift */; };
+		65FCAE631D2D0A810052299D /* QRcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65FCAE621D2D0A810052299D /* QRcode.storyboard */; };
+		65FCAE651D2D0F680052299D /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FCAE641D2D0F680052299D /* QRCodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		65CD2B9D1D251E9C00BE0816 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
 		65CD2B9F1D251EA900BE0816 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 		65CD2BA11D251EB700BE0816 /* MineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineTableViewController.swift; sourceTree = "<group>"; };
+		65FCAE621D2D0A810052299D /* QRcode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRcode.storyboard; sourceTree = "<group>"; };
+		65FCAE641D2D0F680052299D /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				65CD2B9B1D251E8F00BE0816 /* HomeTableViewController.swift */,
+				65FCAE641D2D0F680052299D /* QRCodeViewController.swift */,
+				65FCAE621D2D0A810052299D /* QRcode.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -500,6 +506,7 @@
 				6543B1391D26415600E422A9 /* Home.storyboard in Resources */,
 				65CD2B4B1D25173000BE0816 /* Assets.xcassets in Resources */,
 				65CD2B951D25184200BE0816 /* MainVCSettings.json in Resources */,
+				65FCAE631D2D0A810052299D /* QRcode.storyboard in Resources */,
 				6543B13B1D26416600E422A9 /* Message.storyboard in Resources */,
 				6543B13D1D26417100E422A9 /* Discover.storyboard in Resources */,
 				65CD2B491D25173000BE0816 /* Main.storyboard in Resources */,
@@ -531,6 +538,7 @@
 			files = (
 				6543B1431D26421B00E422A9 /* BaseTableViewController.swift in Sources */,
 				65CD2B9C1D251E8F00BE0816 /* HomeTableViewController.swift in Sources */,
+				65FCAE651D2D0F680052299D /* QRCodeViewController.swift in Sources */,
 				65CD2B961D25184200BE0816 /* NullViewController.swift in Sources */,
 				65CD2B441D25172F00BE0816 /* AppDelegate.swift in Sources */,
 				65CD2BA21D251EB700BE0816 /* MineTableViewController.swift in Sources */,
