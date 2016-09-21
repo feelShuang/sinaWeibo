@@ -40,12 +40,12 @@ class BaseTableViewController: UITableViewController {
     
     /** 监听注册按钮 */
     @objc private func registerBtnClick(btn: UIButton) {
-        LSLog("")
+        LSPrint("")
     }
     
     /** 登录按钮监听 */
     @objc private func loginBtnClick(btn: UIButton) {
-        LSLog("")
+        LSPrint("")
     }
 }
 
@@ -53,11 +53,11 @@ class BaseTableViewController: UITableViewController {
 extension BaseTableViewController: VisitorViewDelegate {
     
     func visitorViewDidClickRegisterBtn(visitor: VisitorView) {
-        LSLog("")
+        LSPrint("")
     }
     
     func visitorViewDidClickLoginBtn(visitor: VisitorView) {
-        LSLog("")
+        LSPrint("")
     }
 }
 */

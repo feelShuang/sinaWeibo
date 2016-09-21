@@ -55,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 // 写在class APPDelegate: UIResponder, UIApplecationDelegte{}表示的AppDelegate类的方法 只能拿到这个类才能访问
-func LSLog<T>(message: T, fileName: String = #file, methodName: String = #function, lineNumber: Int = #line) {
+func LSPrint<T>(message: T, fileName: String = #file, methodName: String = #function, lineNumber: Int = #line) {
     
     #if DEBUG
         print("\(methodName)[\(lineNumber)]:\(message)")

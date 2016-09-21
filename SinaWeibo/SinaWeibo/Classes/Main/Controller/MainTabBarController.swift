@@ -92,7 +92,7 @@ class MainTabBarController: UITabBarController {
          */
         
         guard let name = NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as? String else {
-            LSLog("获取命名空间失败")
+            LSPrint("获取命名空间失败")
             return
         }
         
@@ -102,7 +102,7 @@ class MainTabBarController: UITabBarController {
         }
         
         guard let typeCls = cls as? UITableViewController.Type else {
-            LSLog("cls不能当做UITableViewController")
+            LSPrint("cls不能当做UITableViewController")
             return
         }
         let childController = typeCls.init()
@@ -124,7 +124,7 @@ class MainTabBarController: UITabBarController {
      而Swift中素有东西都是在编译时确定的
     */
     func composeBtnClik(btn: UIButton) {
-        LSLog(btn)
+        LSPrint(btn)
     }
     
     // MARK: - 懒加载

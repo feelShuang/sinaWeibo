@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="l3W-6r-mpM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="l3W-6r-mpM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -20,16 +20,42 @@
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fii-pc-MmW">
                                 <rect key="frame" x="0.0" y="551" width="600" height="49"/>
                                 <items>
-                                    <tabBarItem title="二维码" image="qrcode_tabbar_icon_qrcode" selectedImage="qrcode_tabbar_icon_qrcode_highlighted" id="Rv9-ik-lIH"/>
+                                    <tabBarItem tag="1" title="二维码" image="qrcode_tabbar_icon_qrcode" selectedImage="qrcode_tabbar_icon_qrcode_highlighted" id="Rv9-ik-lIH"/>
                                     <tabBarItem title="条形码" image="qrcode_tabbar_icon_barcode" selectedImage="qrcode_tabbar_icon_barcode_highlighted" id="MIa-kR-jZV"/>
                                 </items>
                                 <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </tabBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="94z-Kg-FiO">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_border" translatesAutoresizingMaskIntoConstraints="NO" id="lwQ-T9-x5O">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_scanline_qrcode" translatesAutoresizingMaskIntoConstraints="NO" id="jMt-eM-CPD">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="lwQ-T9-x5O" secondAttribute="trailing" id="91f-DC-Bzh"/>
+                                    <constraint firstAttribute="width" constant="200" id="DSE-7h-Nja"/>
+                                    <constraint firstItem="jMt-eM-CPD" firstAttribute="centerX" secondItem="94z-Kg-FiO" secondAttribute="centerX" id="DuT-gz-9AT"/>
+                                    <constraint firstItem="lwQ-T9-x5O" firstAttribute="leading" secondItem="94z-Kg-FiO" secondAttribute="leading" id="Dvn-qn-nIC"/>
+                                    <constraint firstItem="jMt-eM-CPD" firstAttribute="top" secondItem="94z-Kg-FiO" secondAttribute="top" id="Hra-B6-lfE"/>
+                                    <constraint firstItem="jMt-eM-CPD" firstAttribute="width" secondItem="94z-Kg-FiO" secondAttribute="width" id="LLh-pX-vX5"/>
+                                    <constraint firstAttribute="height" constant="200" id="RhE-uj-btE"/>
+                                    <constraint firstItem="lwQ-T9-x5O" firstAttribute="top" secondItem="94z-Kg-FiO" secondAttribute="top" id="VwN-ff-BLa"/>
+                                    <constraint firstItem="jMt-eM-CPD" firstAttribute="height" secondItem="94z-Kg-FiO" secondAttribute="height" id="Ykb-6R-6eK"/>
+                                    <constraint firstAttribute="bottom" secondItem="lwQ-T9-x5O" secondAttribute="bottom" id="jbX-FX-UC6"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Fii-pc-MmW" firstAttribute="leading" secondItem="2FM-h8-phj" secondAttribute="leading" id="3a6-Z7-Oc2"/>
                             <constraint firstItem="svk-eQ-8mm" firstAttribute="top" secondItem="Fii-pc-MmW" secondAttribute="bottom" id="CuF-aO-dOX"/>
+                            <constraint firstItem="94z-Kg-FiO" firstAttribute="centerX" secondItem="2FM-h8-phj" secondAttribute="centerX" id="FpB-dy-UdG"/>
+                            <constraint firstItem="94z-Kg-FiO" firstAttribute="centerY" secondItem="2FM-h8-phj" secondAttribute="centerY" id="eos-ud-fXG"/>
                             <constraint firstAttribute="trailing" secondItem="Fii-pc-MmW" secondAttribute="trailing" id="vCB-mn-ppx"/>
                         </constraints>
                     </view>
@@ -46,6 +72,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="containerHeightContraint" destination="RhE-uj-btE" id="kaT-h3-clw"/>
+                        <outlet property="customTabBar" destination="Fii-pc-MmW" id="XGr-Zo-ih5"/>
+                        <outlet property="scanLineView" destination="jMt-eM-CPD" id="q6g-bw-27E"/>
+                        <outlet property="scanlineTopConstraint" destination="Hra-B6-lfE" id="7sy-zO-B2a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MYp-bp-huw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,6 +108,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="qrcode_border" width="51" height="51"/>
+        <image name="qrcode_scanline_qrcode" width="218" height="170"/>
         <image name="qrcode_tabbar_icon_barcode" width="40" height="40"/>
         <image name="qrcode_tabbar_icon_barcode_highlighted" width="40" height="40"/>
         <image name="qrcode_tabbar_icon_qrcode" width="40" height="40"/>

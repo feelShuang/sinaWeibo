@@ -37,7 +37,7 @@ class HomeTableViewController: BaseTableViewController {
     }
     
     @objc func leftBarButtonItemClick() {
-        LSLog("")
+        LSPrint("")
     }
     
     @objc func rightBarButtonItemClick() {
