@@ -41,16 +41,17 @@ class QRCodeViewController: UIViewController {
         
         // 设置冲击波top约束
         self.scanlineTopConstraint.constant = -containerHeightContraint.constant
+        LSPrint(-containerHeightContraint.constant)
+        LSPrint(self.scanlineTopConstraint.constant)
         // 强制更新
-        self.scanLineView.layoutIfNeeded()
-        
+        view.layoutIfNeeded()
         // 执行冲击波动画
         [UIView .animateWithDuration(2.0, animations: {
+            UIView.setAnimationRepeatCount(MAXFLOAT)
             // 修改约束
             self.scanlineTopConstraint.constant = self.containerHeightContraint.constant
-            UIView.setAnimationRepeatCount(MAXFLOAT)
             // 强制更新
-            self.scanLineView.layoutIfNeeded()
+            self.view.layoutIfNeeded()
         })];
     }
     
@@ -107,14 +108,17 @@ class QRCodeViewController: UIViewController {
     private lazy var output: AVCaptureMetadataOutput = AVCaptureMetadataOutput()
     // 创建预览图层
     private lazy var previewLayer: AVCaptureVideoPreviewLayer = {
-       
+       // 1. 创建预览图层
         let layer = AVCaptureVideoPreviewLayer(session: self.session)
+        // 2. 设置frame
         layer.frame = UIScreen.mainScreen().bounds
+        // 3. 设置填充模式，否则4s会有问题
+        layer.videoGravity = AVLayerVideoGravityResizeAspectFill;
         return layer
     }()
     
     // 创建用于绘制边线的图层
-    private lazy var 
+//    private lazy var 
 }
 
 // MARK: - TabBarDelegate
